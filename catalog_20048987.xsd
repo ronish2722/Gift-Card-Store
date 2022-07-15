@@ -1,0 +1,597 @@
+<?xml version="1.0"?>
+
+<!-- schema declaration -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <!-- GiftCardStore: - root element -->
+    <xs:element name="GiftCardStore">
+        <xs:complexType>
+            <!-- Use of compositor - sequence -->
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="nav_bar" />
+                <xs:element ref="title1" />
+                <xs:element ref="GiftCards" />
+                <xs:element ref="Reviews" />
+                <xs:element ref="footer" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- nav_bar: - details about navigation bar -->
+    <xs:element name="nav_bar">
+        <xs:complexType>
+            <!-- Use of compositor - sequence -->
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="logo" />
+                <xs:element ref="name" />
+                <xs:element ref="home" />
+                <xs:element ref="help" />
+                <xs:element ref="categories" />
+                <xs:element ref="contact" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Declaring the elements with their respective datatypes-->
+    <xs:element name="logo" />
+    <!-- title1:- Gives a title. -->
+    <xs:element name="title1" type="xs:string" />
+    <xs:element name="name" type="xs:string" />
+    <xs:element name="home" type="xs:string" />
+    <xs:element name="help" type="xs:string" />
+    <xs:element name="categories" type="xs:string" />
+    <xs:element name="contact" type="xs:string" />
+
+    <!-- GiftCards:-details of all the giftcards displayed in the system -->
+    <xs:element name="GiftCards">
+        <xs:complexType>
+            <!-- Use of compositor - sequence -->
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="special_offer" />
+                <xs:element ref="Top_sellers" />
+                <xs:element ref="SteamLogo" />
+                <xs:element ref="Information" />
+                <xs:element ref="Steam_GiftCards" />
+                <xs:element ref="EpicLogo" />
+                <xs:element ref="Information" />
+                <xs:element ref="EpicGames_GiftCards" />
+                <xs:element ref="FortniteLogo" />
+                <xs:element ref="Information" />
+                <xs:element ref="Fortnite_GiftCards" />
+                <xs:element ref="ValorantLogo" />
+                <xs:element ref="Information" />
+                <xs:element ref="Valorant" />
+                <xs:element ref="LeagueLogo" />
+                <xs:element ref="Information" />
+                <xs:element ref="League" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- special_offer: - Shows the card with special offer -->
+    <xs:element name="special_offer">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="offer_img" />
+                <xs:element ref="offer_title" />
+                <xs:element ref="offer_info" />
+                <xs:element ref="Special_Steam" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Declaring the elements with their respective datatypes-->
+    <xs:element name="offer_img" />
+    <xs:element name="offer_title" type="xs:string" />
+    <xs:element name="offer_info" type="xs:string" />
+
+    <!-- special_Steam: - Shows the card with details -->
+    <xs:element name="Special_Steam">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="SteamMiniLogo4" />
+                <xs:element ref="title" />
+                <xs:element ref="price" />
+                <xs:element ref="quantity" />
+                <xs:element ref="discount" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="validity" />
+                <xs:element ref="offers" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="note" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="button" />
+            </xs:sequence>
+            <!-- Referencing the attribute-->
+            <xs:attribute ref="steam_refid" use="required" />
+            <xs:attribute ref="type" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Top_seller:Shows the top selling cards-->
+    <xs:element name="Top_sellers">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="Top_Title" />
+                <xs:element ref="Top_Info" />
+                <xs:element ref="Top_cards" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Declaring the elements with their respective datatypes-->
+    <xs:element name="Top_Title" type="xs:string" />
+    <xs:element name="Top_Info" type="xs:string" />
+
+    <!-- Top_cards:Shows the top selling cards-->
+    <xs:element name="Top_cards">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="Top_Steam" />
+                <xs:element ref="Top_Riot" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Top_Steam:Shows the top selling card with details-->
+    <xs:element name="Top_Steam">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="Top_steam_img" />
+                <xs:element ref="title" />
+                <xs:element ref="price" />
+                <xs:element ref="quantity" />
+                <xs:element ref="validity" />
+                <xs:element ref="type" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="note" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="button" />
+            </xs:sequence>
+            <!-- Referencing the attribute-->
+            <xs:attribute ref="steam_refid" use="required" />
+            <xs:attribute ref="type" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Top_Riot:Shows the top selling card with details-->
+    <xs:element name="Top_Riot">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="Top_riot_img" />
+                <xs:element ref="title" />
+                <xs:element ref="price" />
+                <xs:element ref="quantity" />
+                <xs:element ref="discount" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="validity" />
+                <xs:element ref="note" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="button" />
+            </xs:sequence>
+            <!-- Referencing the attribute-->
+            <xs:attribute ref="riot_refid" use="required" />
+            <xs:attribute ref="type" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Declaring the elements with their respective datatypes-->
+    <xs:element name="SteamLogo" />
+
+    <xs:element name="Information" type="xs:string" />
+
+    <!--Steam_GiftCards:Shows giftcards of steam -->
+    <xs:element name="Steam_GiftCards">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="Steam" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--Steam:Shows steam giftcard details -->
+    <xs:element name="Steam">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="SteamMiniLogo1" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="SteamMiniLogo2" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="SteamMiniLogo3" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="SteamMiniLogo4" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="title" />
+                <xs:element ref="price" />
+                <xs:element ref="quantity" />
+                <xs:element ref="discount" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="validity" />
+                <xs:element ref="type" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="offers" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="info" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="note" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="button" />
+            </xs:sequence>
+            <!-- Referencing the attribute-->
+            <xs:attribute ref="steam_id" use="required" />
+            <xs:attribute ref="type" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Declaring the elements with their respective datatypes-->
+    <xs:element name="EpicLogo" />
+
+    <!--EpicGames_GiftCards:Shows giftcards of Epic Games -->
+    <xs:element name="EpicGames_GiftCards">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="EpicGames" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--EpicGames:Shows EpciGames giftcard details -->
+    <xs:element name="EpicGames">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="EpicMiniLogo1" />
+                <xs:element ref="title" />
+                <xs:element ref="price" />
+                <xs:element ref="quantity" />
+                <xs:element ref="discount" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="validity" />
+                <xs:element ref="type" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="offers" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="info" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="note" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="button" />
+            </xs:sequence>
+            <!-- Referencing the attribute-->
+            <xs:attribute ref="epic_id" use="required" />
+            <xs:attribute ref="type" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="FortniteLogo" />
+
+    <!--Fortnite_GiftCards:Shows giftcard of fortnite -->
+    <xs:element name="Fortnite_GiftCards">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="Fortnite" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--Fortnite:Shows fortnite giftcard with details  -->
+    <xs:element name="Fortnite">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="FortniteMiniLogo" />
+                <xs:element ref="title" />
+                <xs:element ref="price" />
+                <xs:element ref="quantity" />
+                <xs:element ref="discount" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="validity" />
+                <xs:element ref="type" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="offers" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="info" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="note" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="button" />
+            </xs:sequence>
+            <!-- Referencing the attribute-->
+            <xs:attribute ref="epic_id" use="required" />
+            <xs:attribute ref="type" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="ValorantLogo" />
+
+    <!--Valorant:Shows giftcard of valorant  -->
+    <xs:element name="Valorant">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="Riot" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="LeagueLogo" />
+
+    <!--League:Shows giftcard of League  -->
+    <xs:element name="League">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="Riot" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--Riot:Shows valorant and league giftcard with details  -->
+    <xs:element name="Riot">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="ValorantMiniLogo" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element ref="LeagueMiniLogo" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element ref="title" />
+                <xs:element ref="price" />
+                <xs:element ref="quantity" />
+                <xs:element ref="discount" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="validity" />
+                <xs:element ref="type" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="offers" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="info" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="note" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="button" />
+            </xs:sequence>
+            <!-- Referencing the attribute-->
+            <xs:attribute ref="riot_id" use="required" />
+            <xs:attribute ref="type" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Declaring the elements with their respective datatypes-->
+    <xs:element name="SteamMiniLogo1" />
+    <xs:element name="SteamMiniLogo2" />
+    <xs:element name="SteamMiniLogo3" />
+    <xs:element name="SteamMiniLogo4" />
+    <xs:element name="Top_steam_img" />
+    <xs:element name="Top_riot_img" />
+    <xs:element name="EpicMiniLogo1" />
+    <xs:element name="FortniteMiniLogo" />
+    <xs:element name="ValorantMiniLogo" />
+    <xs:element name="LeagueMiniLogo" />
+    <xs:element name="title" type="xs:string" />
+
+    <!-- Declaring the elements of complexType i.e having attributes-->
+    <xs:element name="price">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:positiveInteger">
+                    <xs:attribute ref="method" use="optional" default="credit|debit" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Declaring the elements and attributes with their respective datatypes-->
+    <xs:element name="quantity" type="xs:positiveInteger" />
+    <xs:element name="discount" type="xs:positiveInteger" />
+    <xs:element name="validity" type="xs:date" />
+    <xs:element name="type" type="xs:string" />
+    <xs:element name="offers" type="xs:string" />
+    <xs:element name="note" type="xs:string" />
+    <xs:element name="info" type="xs:string" />
+    <xs:element name="button" type="xs:string" />
+    <xs:attribute name="steam_id" type="xs:ID" />
+    <xs:attribute name="epic_id" type="xs:ID" />
+    <xs:attribute name="riot_id" type="xs:ID" />
+    <xs:attribute name="steam_refid" type="xs:IDREF" />
+    <xs:attribute name="riot_refid" type="xs:IDREF" />
+
+    <!-- Declaring the attribute and applying enumeration-->
+    <xs:attribute name="type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="physical" />
+                <xs:enumeration value="virtual" />
+                <xs:enumeration value="physical|virtual" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <!-- Declaring the attribute and applying enumeration-->
+    <xs:attribute name="method">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="physical|credit|debit" />
+                <xs:enumeration value="credit|debit" />
+                <xs:enumeration value="debit" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <!--Reviews: Show reviews of customers -->
+    <xs:element name="Reviews">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="Review_title" />
+                <xs:element ref="Reviewers" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--Reviewers: Show reviewers -->
+    <xs:element name="Reviewers">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="Reviewer" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--Reviewer: Shows reviewer with their profile, name, review and rating-->
+    <xs:element name="Reviewer">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="reviewerPic" />
+                <xs:element ref="reviewerName" />
+                <xs:element ref="review" minOccurs="0" maxOccurs="1" />
+                <xs:element ref="rating" />
+            </xs:sequence>
+            <!-- Referencing the attribute-->
+            <xs:attribute ref="review_id" />
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Declaring the elements and attributes with their respective datatypes-->
+    <xs:element name="Review_title" type="xs:string" />
+    <xs:element name="reviewerPic" />
+
+    <!-- Declaring the elements of complexType i.e having attributes-->
+    <xs:element name="reviewerName">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="reviewer_id" use="required" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Declaring the elements with their respective datatypes-->
+    <xs:element name="review" type="xs:string" />
+    <xs:element name="rating" />
+    <xs:attribute name="review_id" type="xs:ID" />
+    <xs:attribute name="reviewer_id" type="xs:ID" />
+
+    <!-- footer: Contains all the footer components-->
+    <xs:element name="footer">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="title2" />
+                <xs:element ref="About_us" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- About_us: Contains the about us section-->
+    <xs:element name="About_us">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="info1" />
+                <xs:element ref="Shops" />
+                <xs:element ref="socialMedia" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- info1: Contains the information of the gift card store-->
+    <xs:element name="info1">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="title4" />
+                <xs:element ref="find" />
+                <xs:element ref="web_address" />
+                <xs:element ref="contact_us" />
+                <xs:element ref="email_address" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Shops: Different Stores information-->
+    <xs:element name="Shops">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="Shop_info" />
+                <xs:element ref="Shop_details" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Shop_details: Different branches of the stores-->
+    <xs:element name="Shop_details">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="Shop" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Shop: Contains the details of different branches of the stores-->
+    <xs:element name="Shop">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="branch" />
+                <xs:element ref="location" />
+                <xs:element ref="number" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- socialMedia: Contains the social media content-->
+    <xs:element name="socialMedia">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="social_title" />
+                <xs:element ref="social_logo" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- social_logo: Contains the social media logos-->
+    <xs:element name="social_logo">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Referencing the elements in sequential order-->
+                <xs:element ref="insta" />
+                <xs:element ref="fb" />
+                <xs:element ref="twitter" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Declaring the elements with their respective datatypes-->
+    <xs:element name="title2" type="xs:string" />
+    <xs:element name="title4" type="xs:string" />
+    <xs:element name="find" type="xs:string" />
+    <xs:element name="web_address" type="xs:string" />
+    <xs:element name="contact_us" type="xs:string" />
+    <xs:element name="email_address">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[_\-a-zA-Z0-9\.\+]+@[a-zA-Z0-9](\.?[\-a-zA-Z0-9]*[a-zA-Z0-9])*" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="Shop_info" type="xs:string" />
+    <xs:element name="branch" type="xs:string" />
+
+    <!-- Declaring the elements of complexType i.e having attributes-->
+    <xs:element name="location">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="branch" use="required" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Declaring the elements of complexType i.e having attributes-->
+    <xs:element name="number">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="call_type" use="optional" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Declaring the elements with their respective datatypes-->
+    <xs:element name="social_title" type="xs:string" />
+    <xs:element name="insta" />
+    <xs:element name="fb" />
+    <xs:element name="twitter" />
+    <xs:attribute name="branch" type="xs:string" />
+    <xs:attribute name="call_type" type="xs:string" />
+
+
+</xs:schema>

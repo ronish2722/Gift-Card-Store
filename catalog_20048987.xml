@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="catalog_20048987.css"?>
+<GiftCardStore xsi:noNamespaceSchemaLocation="catalog_20048987.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- nav_bar: - details about navigation bar -->
+    <nav_bar>
+        <logo />
+        <name>GamesGG</name>
+        <home>Home</home>
+        <help>Help</help>
+        <categories>Categories</categories>
+        <contact>Contact Us</contact>
+    </nav_bar>
+    <!-- title1:- Gives a title. -->
+    <title1>Gift Cards</title1>
+    <!-- GiftCards:-details of all the giftcards displayed in the system -->
+    <GiftCards>
+        <!-- special_offer: - Shows the card with special offer -->
+        <special_offer>
+            <!-- for image-->
+            <offer_img />
+            <offer_title>Special Offer</offer_title>
+            <offer_info>Gift Card for the special offer.</offer_info>
+            <!-- special_Steam: - Shows the card with details -->
+            <Special_Steam steam_refid="s104" type="physical|virtual">
+                <SteamMiniLogo4 />
+                <title>Steam 100$ GiftCard</title>
+                <price method="physical|credit|debit">9400</price>
+                <quantity>25</quantity>
+                <discount>15</discount>
+                <validity>2023-05-03</validity>
+                <offers>Get a pen drive free.</offers> <!-- Optional-->
+                <note>Home Delivery Available.</note>
+                <button>Shop Now</button>
+            </Special_Steam>
+        </special_offer>
+        <!-- Top_seller:Shows the top selling cards-->
+        <Top_sellers>
+            <Top_Title>Best Sellers</Top_Title>
+            <Top_Info>These are some best selling giftcards.</Top_Info>
+            <Top_cards>
+                <!-- Top_Steam:Shows the top selling card with details-->
+                <Top_Steam steam_refid="s101" type="physical">
+                    <Top_steam_img />
+                    <title>Steam 10$ GiftCard</title>
+                    <price method="physical|credit|debit">1200</price>
+                    <quantity>200</quantity>
+                    <validity>2022-12-12 </validity>
+                    <type>Physical</type> <!--Optional-->
+                    <note>Home Delivery Available.</note> <!--Optional-->
+                    <button>Shop Now</button>
+                </Top_Steam>
+                <!-- Top_Riot:Shows the top selling card with details-->
+                <Top_Riot riot_refid="r101" type="physical|virtual">
+                    <Top_riot_img />
+                    <title>Valorant 10$ GiftCard</title>
+                    <price method="physical|credit|debit">1250</price>
+                    <quantity>180</quantity>
+                    <discount>5</discount>
+                    <validity>2022-12-04</validity>
+                    <note>Home Delivery Available.</note>
+                    <button>Shop Now</button>
+                </Top_Riot>
+            </Top_cards>
+        </Top_sellers>
+        <!-- for image-->
+        <SteamLogo />
+        <Information>STEAM GIFTCARDS</Information>
+        <!--Steam_GiftCards:Shows giftcards of steam -->
+        <Steam_GiftCards>
+            <!--Steam:Shows steam giftcard details -->
+            <Steam steam_id="s101" type="physical">
+                <SteamMiniLogo1 />
+                <title>Steam 10$ GiftCard</title>
+                <price method="physical|credit|debit">1200</price>
+                <quantity>200</quantity>
+                <validity>2022-12-12 </validity>
+                <type>Physical</type> <!--Optional-->
+                <note>Home Delivery Available.</note> <!--Optional-->
+                <button>Shop Now</button>
+            </Steam>
+            <Steam steam_id="s102" type="virtual">
+                <SteamMiniLogo2 />
+                <title>Steam 20$ GiftCard</title>
+                <price method="credit|debit">2400</price>
+                <quantity>100</quantity>
+                <discount>5</discount>
+                <validity>2023-05-03</validity>
+                <type>Virtual</type>
+                <info>This is a 20 dollar steam giftcard. Code must be inserted form it to be redemmed.</info>
+                <button>Shop Now</button>
+            </Steam>
+            <Steam steam_id="s103" type="physical|virtual">
+                <SteamMiniLogo3 />
+                <title>Steam 50$ GiftCard</title>
+                <price method="physical|credit|debit">5700</price>
+                <quantity>50</quantity>
+                <validity>2023-05-03</validity>
+                <info>This is a 30 dollar steam giftcard. Code must be inserted form it to be redemmed.</info>
+                <note>Home Delivery Available.</note>
+                <button>Shop Now</button>
+            </Steam>
+            <Steam steam_id="s104" type="physical|virtual">
+                <SteamMiniLogo4 />
+                <title>Steam 100$ GiftCard</title>
+                <price method="physical|credit|debit">9400</price>
+                <quantity>25</quantity>
+                <discount>15</discount>
+                <validity>2023-05-03</validity>
+                <offers>Get a pen drive free.</offers> <!-- Optional-->
+                <note>Home Delivery Available.</note>
+                <button>Shop Now</button>
+            </Steam>
+        </Steam_GiftCards>
+        <!-- for image-->
+        <EpicLogo />
+        <Information>EPIC GIFTCARDS</Information>
+        <!--EpicGames_GiftCards:Shows giftcards of Epic Games -->
+        <EpicGames_GiftCards>
+            <!--EpicGames:Shows EpciGames giftcard details -->
+            <EpicGames epic_id="e101" type="physical">
+                <EpicMiniLogo1 />
+                <title>Epic Games 10$ GiftCard</title>
+                <price method="physical|credit|debit">1200</price>
+                <quantity>90</quantity>
+                <discount>5</discount>
+                <validity>2023-05-03</validity>
+                <type>Physical</type>
+                <info>This is a 10 dollar epic giftcard. Games from epic game launcher can be bought through this card.</info> <!--optional-->
+                <note>Home Delivery Available.</note>
+                <button>Shop Now</button>
+            </EpicGames>
+            <EpicGames epic_id="e102" type="physical|virtual">
+                <EpicMiniLogo1 />
+                <title>Epic Games 20$ GiftCard</title>
+                <price method="credit|debit">2500</price>
+                <quantity>80</quantity>
+                <validity>2022-07-21</validity>
+                <info>This is a 20 dollar epic giftcard. Games from epic game launcher can be bought through this card.</info>
+                <button>Shop Now</button>
+            </EpicGames>
+            <EpicGames epic_id="e103" type="virtual">
+                <EpicMiniLogo1 />
+                <title>Epic Games 100$ GiftCard</title>
+                <price method="credit|debit">16000</price>
+                <quantity>40</quantity>
+                <discount>10</discount>
+                <validity>2022-11-06</validity>
+                <type>Virtual</type>
+                <offers>Get extra 5$ free.</offers>
+                <note>Home Delivery Available.</note>
+                <button>Shop Now</button>
+            </EpicGames>
+        </EpicGames_GiftCards>
+        <!-- for image-->
+        <FortniteLogo />
+        <Information>FORTNITE GIFTCARDS</Information>
+        <!--Fortnite_GiftCards:Shows giftcard of fortnite -->
+        <Fortnite_GiftCards>
+            <!--Fortnite:Shows fortnite giftcard with details  -->
+            <Fortnite epic_id="e104" type="physical|virtual">
+                <FortniteMiniLogo />
+                <title>Fortnite 10$ GiftCard</title>
+                <price method="physical|credit|debit">1300</price>
+                <quantity>200</quantity>
+                <discount>5</discount>
+                <validity>2022-12-06</validity>
+                <offers>Get a free skin for first purchase.</offers> <!-- Optional-->
+                <info>This card can only be used for fortnite.</info>
+                <note>Home Delivery Available.</note>
+                <button>Shop Now</button>
+            </Fortnite>
+            <Fortnite epic_id="e105" type="virtual">
+                <FortniteMiniLogo />
+                <title>Fortnite 20$ GiftCard</title>
+                <price method="credit|debit">2400</price>
+                <quantity>80</quantity>
+                <validity>2022-09-08</validity>
+                <type>Virtual</type>
+                <info>This card can only be used for fortnite.</info>
+                <note>Home Delivery Available.</note>
+                <button>Shop Now</button>
+            </Fortnite>
+            <Fortnite epic_id="e106" type="virtual">
+                <FortniteMiniLogo />
+                <title>Fortnite 100$ GiftCard</title>
+                <price method="credit|debit">15000</price>
+                <quantity>50</quantity>
+                <discount>10</discount>
+                <validity>2022-08-06</validity>
+                <type>Virtual</type>
+                <info>This card can only be used for fortnite.</info>
+                <note>Home Delivery Available.</note>
+                <button>Shop Now</button>
+            </Fortnite>
+        </Fortnite_GiftCards>
+        <!-- for image-->
+        <ValorantLogo />
+        <Information>VALORANT GIFTCARDS</Information>
+        <!--Valorant:Shows giftcard of valorant  -->
+        <Valorant>
+            <!--Riot:Shows valorant and league giftcard with details  -->
+            <Riot riot_id="r101" type="physical|virtual">
+                <ValorantMiniLogo />
+                <title>Valorant 10$ GiftCard</title>
+                <price method="physical|credit|debit">1250</price>
+                <quantity>180</quantity>
+                <discount>5</discount>
+                <validity>2022-12-11</validity>
+                <note>Home Delivery Available.</note>
+                <button>Shop Now</button>
+            </Riot>
+            <Riot riot_id="r102" type="virtual">
+                <ValorantMiniLogo />
+                <title>Valorant 20$ GiftCard</title>
+                <price method="credit|debit">2500</price>
+                <quantity>80</quantity>
+                <validity>2022-12-06</validity>
+                <type>Virtual</type>
+                <note>Home Delivery Available.</note>
+                <button>Shop Now</button>
+            </Riot>
+        </Valorant>
+        <!-- for image-->
+        <LeagueLogo />
+        <Information>LEAGUE GIFTCARDS</Information>
+        <!--League:Shows giftcard of League  -->
+        <League>
+            <!--Riot:Shows valorant and league giftcard with details  -->
+            <Riot riot_id="r103" type="physical|virtual">
+                <LeagueMiniLogo />
+                <title>LOL 10$ GiftCard</title>
+                <price method="physical|credit|debit">1300</price>
+                <quantity>50</quantity>
+                <validity>2022-11-11</validity>
+                <info>This card can only be used for League of Legends Game For EU region.</info>
+                <button>Shop Now</button>
+            </Riot>
+            <Riot riot_id="r104" type="virtual">
+                <LeagueMiniLogo />
+                <title>LOL 20$ GiftCard</title>
+                <price method="credit|debit">2400</price>
+                <quantity>30</quantity>
+                <discount>2</discount>
+                <validity>2022-12-06</validity>
+                <type>Virtual</type>
+                <info>This card can only be used for League of Legends Game For EU region.</info>
+                <note>Home Delivery Available.</note>
+                <button>Shop Now</button>
+            </Riot>
+        </League>
+    </GiftCards>
+
+    <!--Reviews: Show reviews of customers -->
+    <Reviews>
+        <Review_title>Reviews</Review_title>
+        <!--Reviewers: Show reviewers -->
+        <Reviewers>
+            <!--Reviewer: Shows reviewer with their profile, name, review and rating-->
+            <Reviewer review_id="rev123">
+                <reviewerPic />
+                <reviewerName reviewer_id="cus111">Ayush Thapa Magar</reviewerName>
+                <review>Outstanding</review> <!--optional-->
+                <rating />
+            </Reviewer>
+            <Reviewer review_id="rev124">
+                <reviewerPic />
+                <reviewerName reviewer_id="cus112">Nishcal Maharajan</reviewerName>
+                <review>Thank you!!!</review> <!--optional-->
+                <rating />
+            </Reviewer>
+            <Reviewer review_id="rev125">
+                <reviewerPic />
+                <reviewerName reviewer_id="cus113">Bidhan Bajracharya</reviewerName>
+                <rating />
+            </Reviewer>
+        </Reviewers>
+    </Reviews>
+    <footer>
+        <!-- footer: Contains all the footer components-->
+        <title2>About Us</title2>
+        <!-- About_us: Contains the about us section-->
+        <About_us>
+            <!-- info1: Contains the information of the gift card store-->
+            <info1>
+                <title4>GamesGG</title4>
+                <find>Find Us:</find>
+                <web_address>gamesGG.com</web_address>
+                <contact_us>Contact Us:</contact_us>
+                <email_address>gamesGG@gmail.com</email_address>
+            </info1>
+            <!-- Shops: Different Stores information-->
+            <Shops>
+                <Shop_info>Our Shops</Shop_info>
+                <!-- Shop_details: Different branches of the stores-->
+                <Shop_details>
+                    <!-- Shop: Contains the details of different branches of the stores-->
+                    <Shop>
+                        <branch>Sub Branch</branch>
+                        <location branch="sub branch">DurbarMarg,Kathmandu</location>
+                        <number>01-556667</number>
+                    </Shop>
+                    <Shop>
+                        <branch>Main Branch</branch>
+                        <location branch="main branch">Lagankhel,Lalitpur</location>
+                        <number call_type="line-line">01-555222</number>
+                        <number call_type="telephone">9811111111</number>
+
+                    </Shop>
+                    <Shop>
+                        <branch>Sub Branch</branch>
+                        <location branch="sub branch">Lagankhel,Lalitpur</location>
+                        <number>01-555888</number>
+                    </Shop>
+                </Shop_details>
+            </Shops>
+
+            <!-- socialMedia: Contains the social media content-->
+            <socialMedia>
+                <social_title>Social Medias</social_title>
+                <!-- social_logo: Contains the social media logos-->
+                <social_logo>
+                    <insta />
+                    <fb />
+                    <twitter />
+                </social_logo>
+            </socialMedia>
+        </About_us>
+    </footer>
+
+
+</GiftCardStore>

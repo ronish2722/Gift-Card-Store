@@ -1,0 +1,565 @@
+
+nav_bar{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    padding:30px;
+    background-color: #FFF5E1;
+    margin-bottom: 50px;
+}
+
+name{
+    padding: 7px 13px;
+}
+home{
+    margin-left: 500px;
+    margin-right: 50px ;
+    padding: 7px 13px;
+}
+help,categories,contact {
+    margin-inline: 50px ;
+    padding: 7px 13px;
+}
+logo{
+    background-image: url(vampirefreaks.png);
+    background-size: 30px;
+    width:31px;
+    height:31px;
+}
+
+home:hover,help:hover,categories:hover,contact:hover {
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+title1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-inline: 640px;
+    font-weight: bolder;
+
+}
+
+special_offer{
+    display: flex;
+    flex-direction: column;
+}
+offer_img{
+    background-image: url(offer_img.webp);
+    background-size: 1200px;
+    width:1200px;
+    height:400px;
+    margin-inline: 160px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+offer_title{
+    margin-top: -350px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+    color: aliceblue;
+    font-weight: bolder;
+    margin-inline: 200px;
+}
+offer_info{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    color: aliceblue;
+    margin-inline: 200px;
+    margin-top: 30px;
+}
+Special_Steam{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1000px;
+    margin-right: 190px;
+    margin-top: -230px;
+    margin-bottom: 100px;
+    background-color: aliceblue;
+    transition: transform .3s;
+}
+Top_Info{
+    margin-bottom: 30px;
+}
+Top_sellers{
+    background-color: #D3D3D3;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-inline: 160px;
+}
+Top_Title{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+
+Top_Info{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+Top_cards{
+    display: flex;
+}
+
+Top_Steam{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    background-color: aliceblue;
+    transition: transform .3s;
+}
+
+Top_steam_img{
+    background-image: url(steam_10.jpg);
+    object-fit: fill;
+    background-size: 500px;
+    background-repeat:no-repeat ;
+    width: 500px;
+    height: 600px;
+    
+}
+
+Top_Riot{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 700px;
+    margin-bottom: 100px;
+    background-color: aliceblue;
+    transition: transform .3s;
+}
+Top_riot_img{
+    background-image: url(riot_10.webp);
+    object-fit: fill;
+    background-size: 500px;
+    background-repeat:no-repeat ;
+    width: 500px;
+    height: 600px;
+    
+}
+
+
+
+
+/* ShopImg1{
+    background-image: url(location1.jpg);
+    background-repeat:no-repeat ;
+    background-size: 380px;
+    width: 380px;
+    height: 200px;
+}
+ShopImg2{
+    background-image: url(location2.jpg);
+    background-repeat:no-repeat ;
+    background-size: 420px;
+    width: 420px;
+    height: 200px;
+}
+ShopImg3{
+    background-image: url(location3.webp);
+    background-repeat:no-repeat ;
+    background-size: 380px;
+    width: 380px;
+    height: 200px;
+} */
+GiftCards{
+    display: flex;
+    flex-direction: column;
+}
+SteamLogo{
+    background-image: url(steam.webp);
+    background-repeat:no-repeat ;
+    background-size: 1519px;
+    width:1519px;
+    height:600px;
+    margin-top: 100px;
+    margin-bottom: -550px;
+
+}
+Information{
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 150px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+    text-shadow: white 0px 0px 10px;
+}
+
+Steam{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 18px;
+    margin-bottom: 30px;
+    background-color: aliceblue;
+    transition: transform .3s;
+}
+Steam,EpicGames,Fortnite,Riot,Special_Steam,Top_cards{
+    font-family: 'Courier New', monospace;
+
+}
+title{
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 5px;
+}
+price::before{
+    content: "Price: Rs ";
+}
+quantity::before{
+    content: "Quantity: ";
+}
+discount::before{
+    content:"Discount: ";
+}
+validity::before{
+    content: "Expiry Date: ";
+}
+
+type::before{
+    content: "Type: ";
+}
+
+discount::after{
+    content:"%";
+}
+price,quantity,discount,validity,type{
+    display: list-item;
+    margin-left: 20px;
+}
+info{
+    border-top: inset grey;
+}
+note{
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 12px;
+}
+offers{
+    margin: 5px;
+}
+button{
+    border: solid black;
+    background-color: #202A44;
+    color:white;
+    margin-right:220px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 20px;
+    margin:10px;
+    
+}
+SteamMiniLogo1,SteamMiniLogo2,SteamMiniLogo3,SteamMiniLogo4,EpicMiniLogo1,ValorantMiniLogo,LeagueMiniLogo{
+    background-size: 330px;
+    background-repeat:no-repeat ;
+    width: 330px;
+    height: 200px;
+}
+Steam:hover,EpicGames:hover,Fortnite:hover,Riot:hover,Special_Steam:hover,Top_Steam:hover,Top_Riot:hover{
+    transform: scale(1.1);
+}
+SteamMiniLogo1{
+    background-image: url(steam10dollar.PNG);
+    margin-bottom: -30px;
+}
+SteamMiniLogo2{
+    background-image: url(steam25dollar.PNG);
+    margin-bottom: -30px;
+}
+SteamMiniLogo3{
+    background-image: url(steam50dollar.PNG);
+    margin-bottom: -30px;
+}
+SteamMiniLogo4{
+    background-image: url(steam100dollars.PNG);
+    margin-bottom: -30px;
+}
+
+Steam_GiftCards{
+    margin: 30px;
+    display: flex;
+}
+
+EpicLogo{
+    background-image: url(epic2.webp);
+    background-repeat:no-repeat ;
+    background-size: 1519px;
+    width:1519px;
+    height:600px;
+    margin-top: 100px;
+    margin-bottom: -550px;
+}
+EpicGames_GiftCards{
+    margin: 30px;
+    display: flex;
+}
+
+EpicGames{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 82px;
+    margin-bottom: 30px;
+    background-color: aliceblue;
+    transition: transform .3s;
+}
+
+EpicMiniLogo1{
+    background-image: url(epicmini.jpg);
+}
+
+FortniteLogo{
+    background-image: url(fortnite.webp);
+    background-repeat:no-repeat ;
+    background-size: 1519px;
+    width:1519px;
+    height:600px;
+    margin-top: 100px;
+    margin-bottom: -550px;
+}
+Fortnite_GiftCards{
+    margin: 30px;
+    display: flex;
+}
+
+Fortnite{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 82px;
+    margin-bottom: 30px;
+    background-color: aliceblue;
+    transition: transform .3s;
+}
+
+FortniteMiniLogo{
+    background-image: url(fortnite_gift_cards.png);
+    margin-bottom: -20px;
+}
+
+FortniteMiniLogo{
+    background-size: 320px;
+    background-repeat:no-repeat ;
+    width: 320px;
+    height: 200px;
+}
+/* Riot_GiftCards{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+} */
+ValorantLogo{
+    background-image: url(valorant.jpg);
+    background-repeat:no-repeat ;
+    background-size: 1519px;
+    width:1519px;
+    height:600px;
+    margin-top: 100px;
+    margin-bottom: -550px;
+}
+Valorant{
+    margin: 30px;
+    display: flex;
+}
+
+Riot{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 202px;
+    margin-bottom: 30px;
+    background-color: aliceblue;
+    transition: transform .3s;
+}
+
+ValorantMiniLogo{
+    background-image: url(valorant_gift_cards.jpg);
+    margin-bottom: -30px;
+}
+
+LeagueLogo{
+    background-image: url(league.jpg);
+    background-repeat:no-repeat ;
+    background-size: 1519px;
+    width:1519px;
+    height:600px;
+    margin-top: 100px;
+    margin-bottom: -550px;
+}
+
+League{
+    margin: 30px;
+    display: flex;
+}
+LeagueMiniLogo{
+    background-image: url(league_gift_card.jpg);
+}
+
+Reviews{
+    display: flex;
+    flex-direction: column;
+}
+
+Review_title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+    margin-inline:100px;
+    margin-bottom: 50px;
+}
+Reviewers{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 300px;
+}
+reviewerPic{
+    background-image: url(profile.png);
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    margin-left: 65px;
+    margin-bottom: 20px;
+}
+Reviewer{
+    display: flex;
+    flex-direction: column;
+    background-color: #D3D3D3;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 50px;
+    transition: transform .3s;
+    border: solid black;
+}
+
+reviewerName{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    padding:2px;
+    margin-bottom: 10px;
+}
+review{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+review::before{
+    content: "'";
+}
+review::after{
+    content: "'";
+}
+Reviewer:hover{
+    transform: scale(1.1);
+}
+rating{
+    background-image: url(rating.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+About_us{
+    background-color: #FFF5E1;
+    display: flex;
+    
+}
+
+title2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+    margin:100px;
+}
+info1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: solid black;
+    margin: 20px;
+    
+}
+title4,Shop_info,social_title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+title4,find,web_address,contact_us,email_address{
+    margin-inline: 80px;
+}
+
+location, number,branch,find,web_address,contact_us,email_address{
+    font-family: 'Roboto Mono', monospace;
+    padding:2px;
+}
+
+find,contact_us,branch{
+    font-weight: bolder;
+    font-size: 18px;
+}
+Shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+Shops{
+    display:flex;
+    flex-direction: column;
+    margin:20px;
+    border-right: solid black;
+    margin-inline: 50px;
+}
+
+Shop_details{
+    border-radius: 10px;
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+
+socialMedia{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+social_logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+insta,fb,twitter{
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+insta{
+    background-image: url(instagram.png);
+    transition:  .3s;
+}
+fb{
+    background-image: url(facebook.png);
+    transition: .3s;
+}
+twitter{
+    background-image: url(twitter.png);
+    transition:  .3s;
+}
+
+insta:hover,fb:hover,twitter:hover{
+    transform: scale(1.1);
+}
